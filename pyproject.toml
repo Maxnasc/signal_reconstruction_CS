@@ -1,0 +1,29 @@
+[project]
+name = "signal-reconstruction-cs"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Maxnasc7",email = "maxnasc7@outlook.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy (>=2.2.4,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "o (>=0.0.2b2,<0.0.3)",
+    "scipy (>=1.15.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+  { include = "signal_reconstruction_cs" }
+]
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
